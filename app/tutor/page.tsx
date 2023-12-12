@@ -13,11 +13,11 @@ export default async function ListTutor() {
     const { rows } = await sql`SELECT * from tutor`;
     return (
         <div>
-            <h1 className="text-center text-white">Lista de Cursos</h1>
+            <h1 className="text-center text-white">Lista de Tutor</h1>
 
             <table>
                 <thead>
-                    <tr> <td>Título do Curso</td> <td>Descrição</td></tr>
+                    <tr> <td>Nome</td> <td>email</td></tr>
                 </thead>
                 <tbody>
                     {

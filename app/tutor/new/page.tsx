@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 
 export const revalidate =0
 
-export default function NewCourse({
+export default function NewTutor({
     searchParams,
   }: {
     searchParams?: {
@@ -23,10 +23,10 @@ export default function NewCourse({
     }
     return (
         <div>
-            <h1 className="text-white text-center text-4xl">Cadastrar Cursos</h1>
+            <h1 className="text-white text-center text-4xl">Cadastro de Tutor</h1>
             <form>
-                <input type="text" name="nome" placeholder="Digite o Título do Curso"/><br/><br/>
-                <input type="text" name="email" placeholder="Digite a Descriçao do curso"/> <br/><br/>
+                <input type="text" name="nome" placeholder="Digite o Nome do Tutor"/><br/><br/>
+                <input type="text" name="email" placeholder="Digite o email"/> <br/><br/>
                 <br/>
                 
                 <button formAction={saveTutor} className="">Salvar</button>
